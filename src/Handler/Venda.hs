@@ -62,12 +62,4 @@ getCarrinhoR cid = do
         addStylesheet (StaticR css_bootstrap_css)
         toWidgetHead $(luciusFile "templates/pageCarrinho.lucius")
         $(whamletFile "templates/pageCarrinho.hamlet")
-        
-        {-[whamlet|
-            <h1>
-                PEDIDO DE #{clienteNome cliente}
-            <ul>
-                $forall (Entity _ cardapio, Entity _ pedido, Entity _ _) <- tudo
-                    <li>
-                        #{cardapioNomeitem cardapio}, #{mult (cardapioPreco cardapio) (fromIntegral (pedidoQt pedido))} no dia #{show $ pedidoDia pedido}
-        |]-}
+    
