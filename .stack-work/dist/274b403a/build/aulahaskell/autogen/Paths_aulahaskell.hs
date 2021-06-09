@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "C:\\Users\\Pichau\\Documents\\Haskell\\projeto\\yesodvazioteste\\.stack-work\\install\\34baa319\\bin"
-libdir     = "C:\\Users\\Pichau\\Documents\\Haskell\\projeto\\yesodvazioteste\\.stack-work\\install\\34baa319\\lib\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0-J4gQfHFtUXd1QFijXEZhSf-aulahaskell"
-dynlibdir  = "C:\\Users\\Pichau\\Documents\\Haskell\\projeto\\yesodvazioteste\\.stack-work\\install\\34baa319\\lib\\x86_64-windows-ghc-8.10.4"
-datadir    = "C:\\Users\\Pichau\\Documents\\Haskell\\projeto\\yesodvazioteste\\.stack-work\\install\\34baa319\\share\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
-libexecdir = "C:\\Users\\Pichau\\Documents\\Haskell\\projeto\\yesodvazioteste\\.stack-work\\install\\34baa319\\libexec\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
-sysconfdir = "C:\\Users\\Pichau\\Documents\\Haskell\\projeto\\yesodvazioteste\\.stack-work\\install\\34baa319\\etc"
+bindir     = "C:\\Users\\Pichau\\Documents\\MeusProjetos\\deploy-semespera\\.stack-work\\install\\34baa319\\bin"
+libdir     = "C:\\Users\\Pichau\\Documents\\MeusProjetos\\deploy-semespera\\.stack-work\\install\\34baa319\\lib\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0-J4gQfHFtUXd1QFijXEZhSf-aulahaskell"
+dynlibdir  = "C:\\Users\\Pichau\\Documents\\MeusProjetos\\deploy-semespera\\.stack-work\\install\\34baa319\\lib\\x86_64-windows-ghc-8.10.4"
+datadir    = "C:\\Users\\Pichau\\Documents\\MeusProjetos\\deploy-semespera\\.stack-work\\install\\34baa319\\share\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
+libexecdir = "C:\\Users\\Pichau\\Documents\\MeusProjetos\\deploy-semespera\\.stack-work\\install\\34baa319\\libexec\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
+sysconfdir = "C:\\Users\\Pichau\\Documents\\MeusProjetos\\deploy-semespera\\.stack-work\\install\\34baa319\\etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "aulahaskell_bindir") (\_ -> return bindir)
