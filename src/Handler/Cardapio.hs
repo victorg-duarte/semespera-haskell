@@ -34,8 +34,8 @@ postItemCardapioR = do
         FormSuccess item -> do
             runDB $ insert item
             setMessage [shamlet|
-                <div>
-                    ITEM CADASTRADO COM SUCESSO
+                <script>
+                    ITEM CADASTRADO COM SUCESSO!
             |]
             redirect HomeR
         _ -> redirect ListaItensR
