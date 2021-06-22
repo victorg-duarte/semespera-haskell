@@ -13,10 +13,10 @@
     $maybe mensa <- msg
         <div>
             ^{mensa}
-    <div class="grupo-login">  
+    <div class="grupo-login">
         <h2 style="color: white;">
-            Cadastrar Item:
+            Digite os seguintes dados:
         <form method=post action=@{ItemCardapioR}>
             ^{widget}
-            <div class="grupo-btn">
+            <div class="grupo-btn">  
                 <input type="submit" value="Adicionar" method="post" class="btn btn-success">
