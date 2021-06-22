@@ -20,14 +20,3 @@
             ^{widget}
             <div class="grupo-btn">  
                 <input type="submit" value="Entrar" method="post" class="btn btn-success">
-    
-    $maybe mensa <- msgn
-        <div>
-            ^{mensa}
-    <div class="grupo-login">
-        <h2 style="color: white;">
-            Digite os seguintes dados:
-        <form method=post action=@{ItemCardapioR}>
-            ^{widget}
-            <div class="grupo-btn">  
-                <input type="submit" value="Adicionar" method="post" class="btn btn-success">
