@@ -1,5 +1,5 @@
 <a href=@{HomeR}>
-    <img src=@{StaticR img_home_svg} class="icone">
+   Home
 $maybe mensa <- msg
     <div>
         ^{mensa}
