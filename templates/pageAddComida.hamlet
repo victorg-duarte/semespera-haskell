@@ -13,11 +13,10 @@
     $maybe mensa <- msg
         <div>
             ^{mensa}
-        <div class="grupo-login">  
-            <h1>
-                CADASTRO DE ITEM DO CARDÁPIO
-            
-            <form method=post action=@{ItemCardapioR}>
-                ^{widget}
-                <div class="grupo-btn">
-                    <input type="submit" value="Adicionar" method="post" class="btn btn-success">
+    <div class="grupo-login">  
+        <h2 style="color: white;">
+            Cadastrar Item:
+        <form method=post action=@{ItemCardapioR}>
+            ^{widget}
+            <div class="grupo-btn">
+                <input type="submit" value="Adicionar" method="post" class="btn btn-success">
