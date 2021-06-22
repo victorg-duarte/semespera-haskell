@@ -21,11 +21,11 @@ formCardapio mc = renderDivs $ Cardapio
 getItemCardapioR :: Handler Html
 getItemCardapioR = do
     (widget, _) <- generateFormPost (formCardapio Nothing)
-    msg <- getMessage
+    msgn <- getMessage
     defaultLayout $ do
         addStylesheet (StaticR css_bootstrap_css)
-        toWidgetHead $(luciusFile "templates/pageAddComida.lucius")
-        $(whamletFile "templates/pageAddComida.hamlet")
+        toWidgetHead $(luciusFile "templates/pageCadastro.lucius")
+        $(whamletFile "templates/pageCadastro.hamlet")
 
 postItemCardapioR :: Handler Html
 postItemCardapioR = do
