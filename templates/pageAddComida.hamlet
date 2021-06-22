@@ -1,16 +1,16 @@
-<title>SemEspera
+<title>SemEsperaa
 <header>
     <nav class="topnav">
         <a href=@{HomeR} class="navbar-brand">
             <img src=@{StaticR img_logoSemFundo2_png} class="logo">
         <a class="btnHeader" href=@{HomeR}>Home</a>
         <a class="btnHeader" href=@{InstrucaoR}>Instruções</a>
-        <a class="btnHeader" href=@{SobreR}>Sobre</a>
+        <a class="btnHeader" href=@{SobreR}>Sobree</a>
         <div class="header-right">
 
 
 <section>
-    $maybe mensa <- msg
+    $maybe mensa <- msgn
         <div>
             ^{mensa}
     <div class="grupo-login">

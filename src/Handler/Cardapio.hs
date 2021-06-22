@@ -21,7 +21,7 @@ formCardapio mc = renderDivs $ Cardapio
 getItemCardapioR :: Handler Html
 getItemCardapioR = do
     (widget, _) <- generateFormPost (formCardapio Nothing)
-    msg <- getMessage
+    msgn <- getMessage
     defaultLayout $ do
         addStylesheet (StaticR css_bootstrap_css)
         toWidgetHead $(luciusFile "templates/pageAddComida.lucius")
@@ -62,7 +62,7 @@ getListaItensR = do
 postApagarItemR :: CardapioId -> Handler Html
 postApagarItemR iid = do
     runDB $ delete iid
-    redirect ListaItensR
+    redirect GerenciaComidaR
 
 getEditarItemR :: CardapioId -> Handler Html
 getEditarItemR iid = do
@@ -78,7 +78,7 @@ postEditarItemR iid = do
     case result of
         FormSuccess novoItem -> do
             runDB $ replace iid novoItem
-            redirect ListaItensR
+            redirect GerenciaComidaR
         _ -> redirect HomeR
 
 getListaComidaR :: Handler Html
