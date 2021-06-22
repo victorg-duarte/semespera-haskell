@@ -35,7 +35,7 @@ postItemCardapioR = do
             runDB $ insert item
             setMessage [shamlet|
                 <script>
-                    ITEM CADASTRADO COM SUCESSO!
+                    alert("Item cadastrado com sucesso!!");
             |]
             redirect GerenciaComidaR
         _ -> redirect HomeR
